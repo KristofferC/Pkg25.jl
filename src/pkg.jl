@@ -2,8 +2,12 @@
 
 module Pkg25
 
-const DEFAULT_META = "https://github.com/KristofferC/METADATA.jl"
+export Dir, Types, Reqs, Cache, Read, Query, Resolve, Write, Entry
+export dir, init, rm, add, available, installed, status, clone, checkout,
+       update, resolve, test, build, free, pin, Pkg25Error, setprotocol!
 
+const DEFAULT_META = "https://github.com/JuliaLang/METADATA.jl"
+const META_BRANCH = "metadata-v2"
 const META_BRANCH = "metadata-v3"
 
 isdevmetadata() = Dir.getmetabranch() == META_BRANCH
