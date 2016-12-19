@@ -1,6 +1,6 @@
 # Pkg25
 
-fds
+Replacement of Pkg that uses my sharded METADATA: https://github.com/KristofferC/METADATA.jl.
 
 [![Build Status](https://travis-ci.org/KristofferC/Pkg25.jl.svg?branch=master)](https://travis-ci.org/KristofferC/Pkg25.jl)
 
