@@ -5,12 +5,12 @@ os:
   - osx
 julia:
   - release
-  - nightly
 notifications:
   email: false
 # uncomment the following lines to override the default test script
 script:
   - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - mkdir /home/travis/.julia
   - mkdir /home/travis/.julia/v0.5
   - cd /home/travis/.julia/v0.5
   - git clone https://github.com/KristofferC/Pkg25.jl Pkg25
