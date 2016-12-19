@@ -14,4 +14,4 @@ script:
   - mkdir /home/travis/.julia/v0.5
   - cd /home/travis/.julia/v0.5
   - git clone https://github.com/KristofferC/Pkg25.jl Pkg25
-  - julia -e 'using Pkg25; Pkg25.clone(pwd()); Pkg25.build("Pkg25"); Pkg25.test("Pkg25"; coverage=true)'
+  - julia -e 'using Pkg25; Pkg25.test("Pkg25"; coverage=true)'
